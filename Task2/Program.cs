@@ -1,10 +1,13 @@
-﻿namespace Task2
+﻿using System.Security.Cryptography;
+
+namespace Task2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            TemplateMethodExample algorithm = new DerivedClass();
+            algorithm.Run();
         }
     }
 }
